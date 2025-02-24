@@ -1,3 +1,4 @@
+#Starting Compose
 x-depends_on: &default-depends_on
   "db":
     condition: service_healthy

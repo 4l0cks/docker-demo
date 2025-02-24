@@ -1,0 +1,10 @@
+#Override compose
+services:
+
+volumes:
+  cache: {}
+  public_storage: {}
+  private_storage: {}
+  etc_nginx: {}
+  run_php_fpm: {}
+  public: {}

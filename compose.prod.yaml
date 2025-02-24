@@ -1,0 +1,19 @@
+#Docker compose for production context and purposes
+services :
+  web:
+    image: $ORO_IMAGE:$ORO_IMAGE_TAG
+    command: nginx
+    env_file: .env
+    restart: unless-stopped
+    ports:
+      - target: 8080
+        published: 80
+        mode: host
+
+volumes:
+  cache: {}
+  public_storage: {}
+  private_storage: {}
+  etc_nginx: {}
+  run_php_fpm: {}
+  public: {}
